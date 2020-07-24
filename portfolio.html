@@ -26,11 +26,20 @@
             </ul>
             <address class="address">
                 <ul class="address-nav list">
-                <li class="address-nav-list"><a class="address-nav-link link" 
+                <li class="address-nav-list">
+                    <a class="address-nav-link link" 
                     href="mailto:info@devstudio.com">
+                    <svg class="address-nav-list-svg">
+                        <use href="./images/sprite.svg#icon-email"></use>
+                    </svg>
                      info@devstudio.com  </a></li>
-                <li class="address-nav-list"> <a class="address-nav-link link" 
-                    href="tell:+380961111111"> +38 096 111 11 11  </a> 
+                     <li class="address-nav-list">
+                    <a class="address-nav-link link"
+                    href="tell:+380961111111"> 
+                    <svg class="address-nav-list-svg">
+                        <use href="./images/sprite.svg#icon-mobile"></use>
+                    </svg>
+                    +38 096 111 11 11  </a> 
                 </li></ul>
                 
             </address>  
@@ -146,18 +155,39 @@
         </div>
     <!-- Присоединяйтесь /// -->
     <div class="footer-section join-in" >    
-      <b class="join-in"> Присоединяйтесь </b> 
-      <ul class="social list" >
-        <li class="social-link" > <a href="" aria-label="Ссылка на Instagram">Instagram</a></li>
-        <li class="social-link"> <a href="" aria-label="Ссылка на Twitter">Twitter</a></li> 
-        <li class="social-link"> <a href="" aria-label="Ссылка на Facebook">Facebook</a></li>
-        <li class="social-link"> <a href="" aria-label="Ссылка на Linkedin">Linkedin</a></li>
+      <b class="join-in-text"> Присоединяйтесь </b> 
+      <ul class="social link list">
+        <li class="social-link" > 
+            <a class="social-link-item bottom" href="" aria-label="Ссылка на Instagram">
+            <svg class="social-link-svg bottom-svg">
+                <use href="./images/sprite.svg#icon-instagram"></use>
+            </svg></a></li>
+        <li class="social-link"> 
+            <a class="social-link-item bottom" href="" aria-label="Ссылка на Twitter">
+                <svg class="social-link-svg bottom-svg">
+                <use href="./images/sprite.svg#icon-twitter"></use>
+            </svg></a></li> 
+        <li class="social-link"> 
+            <a class="social-link-item bottom" href="" aria-label="Ссылка на Facebook">
+                <svg class="social-link-svg bottom-svg">
+                <use href="./images/sprite.svg#icon-facebook"></use>
+            </svg></a></li>
+        <li class="social-link"> 
+            <a class="social-link-item bottom" href="" aria-label="Ссылка на Linkedin">
+                <svg class="social-link-svg bottom-svg">
+                <use href="./images/sprite.svg#icon-linkedin"></use>
+            </svg></a></li>
     </ul>
     </div>
+    <div class="footer-section join-in" >    
+        <b class="join-in-text"> Подпишитесь на рассылку </b>
+        <button class="hero-title-button" type="button">Подписаться
+            <svg class="join-in-svg">
+                <use href="./images/sprite.svg#icon-icon-send"></use>
+            </svg>
+        </button>
     </div>
-    
-     <p  class="copyright container" lang="en">2020 | Developed by GoIT Students </p>    
-     </footer>
-    </div>
-    </body>
-    </html>
+</div>
+</footer>
+</body>
+</html>

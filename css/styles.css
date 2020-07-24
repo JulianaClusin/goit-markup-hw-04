@@ -9,6 +9,7 @@
     --text-main-color: #212121;
     --text-white-color: #ffffff;
     --accent-color: #2196F3;
+    --color-svg: #AFB1B8;
 }
 
 html {
@@ -102,13 +103,13 @@ color:var(--text-main-color);
 .link {
  text-decoration: none;
  display: block;
-  }
+}
   
 .list {
  list-style: none;
  padding: 0;
  margin: 0;
-  }
+}
 
 .address-nav, .navigation-list, .features-list,
 .team-list, .what-are-we-doing, .clients, .social {
@@ -196,7 +197,7 @@ letter-spacing: 0.02em;
 }
 
 .address-nav-list:not(:last-child) {
-  margin-right: 67px;
+  margin-right: 60px;
 }
 
 .address-nav-list-svg {
@@ -443,20 +444,42 @@ margin-bottom: 16px;
 color:var(--text-address-color)
 }
 
-.social-link {
-display: block;
-margin: 0px;
+.social.link.list {
+display: flex;
+justify-content: center;
+/* margin-left: 0px;
+margin-right: 0px; */
 }
 
-.social-link:hover .social-link-svg ,
-.social-link:focus .social-link-svg {
-fill:var(--accent-color);
+.social-link-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: var(--title-theme-color);
+}
+
+.social-link-item:hover .social-link-svg ,
+.social-link-item:focus .social-link-svg {
+fill:var(--text-white-color);
+
+}
+
+.social-link-item:hover,
+.social-link-item:focus {
+  background-color: var(--accent-color);
+}
+
+.social-link:not(:last-child) {
+  margin-right: 10px;
 }
 
 .social-link-svg{
   width: 20px;
   height: 20px;
-  fill: var(--text-address-color);
+  fill: var(--color-svg);
 }
 
 /* CLIENTS */
@@ -464,6 +487,7 @@ fill:var(--accent-color);
 .clients {
   margin: 0px;
 }
+
 .clients-list-logo:hover .clients-list-logo-svg,
 .clients-list-logo:focus .clients-list-logo-svg {
   fill: var(--accent-color);
@@ -474,9 +498,13 @@ fill:var(--accent-color);
   width: 170px;
   height: 90px;
   justify-content: center;
-  border: 1px solid #AFB1B8;
+  border: 1px solid var(--color-svg);
   box-sizing: border-box;
   border-radius: 4px;
+}
+.clients-list-logo:hover,
+.clients-list-logo:focus {
+  border: 1px solid var(--accent-color);
 }
 
 .clients-list-logo-svg {
@@ -543,28 +571,37 @@ align-items: baseline;
 }
 
 .join-in {
-
-font-weight: bold;
-font-size: 14px;
-line-height: 16px;
-text-transform: uppercase;
-
 margin-bottom: 20px;
-
-color:var(--text-white-color)
 }
 
-.copyright {
-font-weight: normal;
-font-size: 12px;
-line-height: 2;
-text-align: center;
+.join-in-text {
+  display: block;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color:var(--text-white-color);
+  margin-bottom: 20px;
+}
 
-margin: 0px;
-padding: 10px 0px;
+.social-link-svg.bottom-svg {
+  fill: var(--text-white-color);
+}
 
-color: rgba(255, 255, 255, 0.4);
-border-top: 1px solid rgba(255, 255, 255, 0.1);
+.social-link-item.bottom {
+background-color: rgba(255, 255, 255, 0.1);
+}
+
+.social-link-item.bottom:hover,
+.social-link-item.bottom:focus {
+background-color:var(--accent-color);
+}
+
+.join-in-svg {
+  margin-left: 10px;
+  width: 24px;
+  height: 24px;
+  fill: var(--title-theme-color);
 }
 
 /* PORTFOLIO */

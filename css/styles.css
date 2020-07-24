@@ -489,6 +489,7 @@ fill:var(--text-white-color);
 
 .clients {
   margin: 0px;
+  align-items: center;
 }
 
 .clients-list-logo:hover .clients-list-logo-svg,

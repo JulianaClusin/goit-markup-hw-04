@@ -219,6 +219,8 @@ fill: var(--accent-color);
 
 .hero-section {
   margin: 0px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 0px;
   background-image: linear-gradient( rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8) ), url(../images/hero.jpg);
   background-repeat: no-repeat;
@@ -226,6 +228,7 @@ fill: var(--accent-color);
   padding-top: 200px;
   padding-bottom: 200px;
   max-width: 1600px;
+  background-size: cover;
 }
 
 .section {
